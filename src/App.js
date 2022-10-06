@@ -3,7 +3,12 @@ import { useState } from "react";
 import { services } from "./utils/services.js";
 import './App.css';
 
+  // El valor del input sólo puede ser modificado si se modifica 
+  // el estado relacionado con ese input.
+
 const getFormattedPrice = (price) => `${price.toFixed(0)}€`;
+
+  // Un arreglo de longitud igual al número de checkbox con método fill.
 
   function App() {
   const [checkedState, setCheckedState] = useState(
