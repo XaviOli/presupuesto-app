@@ -3,7 +3,7 @@ import { useState } from "react";
 import { services } from "./utils/services.js";
 import './App.css';
 
-const getFormattedPrice = (price) => `$${price.toFixed(2)}`;
+const getFormattedPrice = (price) => `${price.toFixed(0)}€`;
 
   function App() {
   const [checkedState, setCheckedState] = useState(

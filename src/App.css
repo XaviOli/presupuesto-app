@@ -52,7 +52,7 @@ h3 {
 }
 
 @media screen and (max-width: 600px) {
-  .toppings-list,
+  .services-list,
   .total {
     width: 90%;
   }
