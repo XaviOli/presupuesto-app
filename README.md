@@ -6,7 +6,7 @@ Aplicación para calcular el presupuesto de una página web, añadiendo más int
 
 In the project directory, you can run:
 
-### `nivel 1`
+### 🌟 `nivel 1`
 Ejercicio 1
 
 Empezará con tres checkboxes mediante los cuales el usuario podrá decidir si desea obtener el presupuesto de una página web (500 €), una campaña SEO (300 €) o una campaña de publicidad (200 €).
@@ -45,7 +45,7 @@ Para terminar esta primera fase del proyecto, es necesario implementar una panta
 
 Es necesario que implementes la navegación entre vistas utilizando el routing de React.
 
-### `nivel 2`
+### 🌟🌟 `nivel 2`
 Ejercicio 6
 
 Para garantizar que todo el mundo entiende el significado de los inputs de número de páginas y de idiomas, tendrás que implementar un botón que abra un popup de ayuda.
@@ -86,7 +86,7 @@ Ejercicio 10
 
 Al igual que en el ejercicio 4 has implementado localstorage para guardar las preferencias de los servicios introducidos por el usuario/a, en este apartado debes implementar la persistencia del listado de presupuestos generados.
 
-### `nivel 3`
+### 🌟🌟🌟 `nivel 3`
 Ejercicio 11
 
 Nos falta tener la capacidad de que el usuario pueda compartir la URL de un presupuesto y que al receptor le salga la pantalla cumplimentada. En muchas ocasiones un servicio se contrata por recomendación, por lo que es fundamental tenerlo implementado.
