@@ -1,5 +1,5 @@
 export const services = [
-    {
+    { 
       name: "Una página web",
       price: 500
     },

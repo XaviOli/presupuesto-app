@@ -1,7 +1,12 @@
 import React from 'react'
 import { useState } from "react";
 import { services } from "./utils/services.js";
-import './App.css';
+import { Title, Products, Items, Selections, Dist, Quantity } from "./components/Category/styles.js";
+import { GlobalStyle } from './GlobalStyles.js';
+
+// import './App.css';
+
+  // Ejercicio 1
 
   // El valor del input sólo puede ser modificado si se modifica 
   // el estado relacionado con ese input.
@@ -11,6 +16,7 @@ const getFormattedPrice = (price) => `${price.toFixed(0)}€`;
   // Un arreglo de longitud igual al número de checkbox con método fill.
 
   function App() {
+
   const [checkedState, setCheckedState] = useState(
     new Array(services.length).fill(false)
   );
@@ -39,14 +45,15 @@ const getFormattedPrice = (price) => `${price.toFixed(0)}€`;
   };
 
   return (
-    <div className="App">
-      <h3>¿Qué quieres hacer?</h3>
-      <ul className="services-list">
+    <div>
+      <GlobalStyle />
+      <Title>¿Qué quieres hacer?</Title>
+      <Products>
         {services.map(({ name, price }, index) => {
           return (
-            <li key={index}>
-              <div className="services-list-item">
-                <div className="left-section">
+            <Selections key={index}>
+              <div>
+                <div>
                   <input
                     type="checkbox"
                     id={`custom-checkbox-${index}`}
@@ -55,20 +62,20 @@ const getFormattedPrice = (price) => `${price.toFixed(0)}€`;
                     checked={checkedState[index]}
                     onChange={() => handleOnChange(index)}
                   />
-                  <label htmlFor={`custom-checkbox-${index}`}>{name}</label>
+                  <Dist htmlFor={`custom-checkbox-${index}`}>{name}</Dist>
                 </div>
-                <div className="right-section">{getFormattedPrice(price)}</div>
+                <Quantity>{getFormattedPrice(price)}</Quantity>
               </div>
-            </li>
+            </Selections>
           );
         })}
-        <li>
-          <div className="services-list-item">
-            <div className="left-section">Total:</div>
-            <div className="right-section">{getFormattedPrice(total)}</div>
-          </div>
-        </li>
-      </ul>
+        <Selections>
+          <Items>
+            <div>Total:</div>
+            <div>{getFormattedPrice(total)}</div>
+          </Items>
+        </Selections>
+      </Products>
     </div>
   );
 }
