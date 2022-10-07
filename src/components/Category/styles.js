@@ -21,7 +21,6 @@ export const Items = styled.div`
 
 export const Selections = styled.li`
   margin-bottom: 0.5rem;
-  /* border-top: 1px solid #ccc; */
   margin-top: 1rem;
   padding-top: 1rem;
   vertical-align: text-bottom;
@@ -31,9 +30,4 @@ export const Selections = styled.li`
 export const Dist = styled.label`
   vertical-align: text-bottom;
   margin-left: 0.2rem;
-`
-
-export const Quantity = styled.div`
-  text-align: right;
-  margin-bottom: 0.5rem;
 `

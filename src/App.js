@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from "react";
 import { services } from "./utils/services.js";
-import { Title, Products, Items, Selections, Dist, Quantity } from "./components/Category/styles.js";
+import { Title, Products, Items, Selections, Dist } from "./components/Category/styles.js";
 import { GlobalStyle } from './GlobalStyles.js';
 
 // import './App.css';
@@ -49,7 +49,7 @@ const getFormattedPrice = (price) => `${price.toFixed(0)}€`;
       <GlobalStyle />
       <Title>¿Qué quieres hacer?</Title>
       <Products>
-        {services.map(({ name, price }, index) => {
+        {services.map(({ name }, index) => {
           return (
             <Selections key={index}>
               <div>
@@ -64,7 +64,6 @@ const getFormattedPrice = (price) => `${price.toFixed(0)}€`;
                   />
                   <Dist htmlFor={`custom-checkbox-${index}`}>{name}</Dist>
                 </div>
-                <Quantity>{getFormattedPrice(price)}</Quantity>
               </div>
             </Selections>
           );
