@@ -31,3 +31,8 @@ export const Dist = styled.label`
   vertical-align: text-bottom;
   margin-left: 0.2rem;
 `
+
+export const Result = styled.div`
+  color: black;
+  text-align: left;
+`

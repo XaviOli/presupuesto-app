@@ -1,7 +1,6 @@
 import React from 'react'
-import { useState } from "react";
 import { services } from "./utils/services.js";
-import { Title, Products, Items, Selections, Dist } from "./components/Category/styles.js";
+import { Title, Products, Items, Selections, Dist, Result } from "./components/Category/styles.js";
 import { GlobalStyle } from './GlobalStyles.js';
 
 // import './App.css';
@@ -11,18 +10,33 @@ import { GlobalStyle } from './GlobalStyles.js';
   // El valor del input sólo puede ser modificado si se modifica 
   // el estado relacionado con ese input.
 
-const getFormattedPrice = (price) => `${price.toFixed(0)}€`;
+  const getFormattedPrice = (price) => `${price.toFixed(0)}€`;
 
   // Un arreglo de longitud igual al número de checkbox con método fill.
 
   function App() {
 
-  const [checkedState, setCheckedState] = useState(
+  const [checkedState, setCheckedState] = React.useState(
     new Array(services.length).fill(false)
   );
   console.log(checkedState)
 
-  const [total, setTotal] = useState(0);
+  const[pages, setPages] = React.useState(1);
+  const[language, setLanguage] = React.useState(1);
+
+  const calculateTotal = () => {
+    let newTotal = 
+    (checkedState ? +300 : 0) +
+    (checkedState ? +200 : 0) +
+    (checkedState ? (checkedState.pages * checkedState.languages * 30) + 500 : 0);
+    setTotal(newTotal);
+  };
+
+  React.useEffect(() => {
+    calculateTotal();
+  }, [checkedState]);
+  
+  const [total, setTotal] = React.useState(0);
 
   const handleOnChange = (position) => {
     const updatedCheckedState = checkedState.map((item, index) =>
@@ -71,7 +85,7 @@ const getFormattedPrice = (price) => `${price.toFixed(0)}€`;
         <Selections>
           <Items>
             <div>Total:</div>
-            <div>{getFormattedPrice(total)}</div>
+            <Result>{getFormattedPrice(total)}</Result>
           </Items>
         </Selections>
       </Products>
