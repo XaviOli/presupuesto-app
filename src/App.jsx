@@ -3,6 +3,7 @@ import { services } from "./utils/services.js";
 import { Title, Products, Items, Selections, Dist, Result } from "./components/Category/styles.js";
 import { GlobalStyle } from './GlobalStyles.js';
 import Navbar from './components/Navbar.jsx';
+import { Outlet } from 'react-router-dom';
 
 // import './App.css';
 
@@ -51,6 +52,7 @@ import Navbar from './components/Navbar.jsx';
     <div>
       <GlobalStyle />
       <Navbar />
+      <Outlet />
       <Title>¿Qué quieres hacer?</Title>
       <Products>
         {services.map(({ name }, index) => {
