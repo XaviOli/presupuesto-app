@@ -2,6 +2,7 @@ import React from 'react'
 import { services } from "./utils/services.js";
 import { Title, Products, Items, Selections, Dist, Result } from "./components/Category/styles.js";
 import { GlobalStyle } from './GlobalStyles.js';
+import Navbar from './components/Navbar.jsx';
 
 // import './App.css';
 
@@ -49,6 +50,7 @@ import { GlobalStyle } from './GlobalStyles.js';
   return (
     <div>
       <GlobalStyle />
+      <Navbar />
       <Title>¿Qué quieres hacer?</Title>
       <Products>
         {services.map(({ name }, index) => {
