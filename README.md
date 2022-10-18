@@ -9,6 +9,8 @@ Empezará con tres checkboxes mediante los cuales el usuario podrá decidir si d
 
 En función de las opciones que marque, se mostrará un precio distinto.
 
+![link image](src/img/ejercicio-1.png)
+
 ### `Ejercicio 2`
 
 Una vez creadas las casillas de selección que permitirán al usuario seleccionar el tipo de servicio que necesita, le ofreceremos la opción de ajustar uno de los servicios: crear una página web, pudiendo elegir el número de páginas y de idiomas .
@@ -21,13 +23,17 @@ Al coste total de la web deberemos añadir la  siguiente cantidad :
 
 - Número de páginas * el número de idiomas * 30 €.
 
+![link image](src/img/ejercicio-2.png)
+
 ### `Ejercicio 3`
 
 el usuario/a ya puede pedir 3 de nuestros servicios y customizar uno de ellos. 
 
-Para hacer la vida más fácil al usuario, en lugar de hacerle teclear el número de páginas e idiomas que necesita, le pondremos unos botones a los lados del input para que de forma fácil pueda modificar su selección .
+Para hacer la vida más fácil al usuario, en lugar de hacerle teclear el número de páginas e idiomas que necesita, le pondremos unos botones a los lados del input para que de forma fácil pueda modificar su selección.
 
 Para ellos, debes cambiar los `<input type = "texto"/>` del panel por un nuevo componente hecho a medida, que tendrá botones de incrementar y decrementar la cantidad, además de un cuadro de texto en el que podremos escribir la cantidad directamente:
+
+![link image](src/img/ejercicio-3.png)
 
 ### `Ejercicio 4`
 
@@ -49,6 +55,8 @@ Para garantizar que todo el mundo entiende el significado de los inputs de núme
 Tienes que crear un nuevo componente, consistente en un botón que cuando es pulsado mostrará un popup de información, que contenga una descripción del servicio y el número de páginas seleccionadas por el usuario:
 
 Al pulsar la capa de fondo gris de la ventana emergente, éste debe desaparecer.
+
+![link image](src/img/ejercicio-4.png)
 
 ### `Ejercicio 7`
 
@@ -88,6 +96,8 @@ Al igual que en el ejercicio 4 has implementado localstorage para guardar las pr
 Nos falta tener la capacidad de que el usuario pueda compartir la URL de un presupuesto y que al receptor le salga la pantalla cumplimentada. En muchas ocasiones un servicio se contrata por recomendación, por lo que es fundamental tenerlo implementado.
 
 Al ir seleccionando cada una de las opciones del presupuesto, la URL de la misma debe cambiar en función de estos cambios. De esta forma, si el cliente comparte la URL con alguien, éste podrá visualizar las mismas opciones del presupuesto.
+
+![link image](src/img/ejercicio-5.png)
 
 
 
