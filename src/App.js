@@ -24,18 +24,6 @@ import { GlobalStyle } from './GlobalStyles.js';
   const[pages, setPages] = React.useState(1);
   const[language, setLanguage] = React.useState(1);
 
-  const calculateTotal = () => {
-    let newTotal = 
-    (checkedState ? +300 : 0) +
-    (checkedState ? +200 : 0) +
-    (checkedState ? (checkedState.pages * checkedState.languages * 30) + 500 : 0);
-    setTotal(newTotal);
-  };
-
-  React.useEffect(() => {
-    calculateTotal();
-  }, [checkedState]);
-  
   const [total, setTotal] = React.useState(0);
 
   const handleOnChange = (position) => {
