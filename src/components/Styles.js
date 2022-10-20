@@ -12,8 +12,13 @@ export const H2 = styled.h2`
   font-size: 1rem;
   font-weight: normal;
   padding-bottom: 1rem;
+  padding-top: 1rem;
 `;
 
 export const Label = styled.label`
   padding-bottom: 1rem;
 `;
+
+export const P = styled.p`
+  padding-right: 12rem;
+`
