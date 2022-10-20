@@ -27,7 +27,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        background: whitesmoke;
+        background: #ECFCDC;
         height: 100vh;
         margin: 0 auto;
         max-width: 500px;

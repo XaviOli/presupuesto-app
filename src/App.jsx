@@ -81,6 +81,9 @@ import { Outlet } from 'react-router-dom';
           </Items>
         </Selections>
       </Products>
+      {checkedState[0] && (
+        <p>Holaaaa!!</p>
+      )}
     </div>
   );
 }
