@@ -1,6 +1,6 @@
 import './App.css';
 import { useState } from 'react';
-import { Form, H2, Label } from './components/Styles';
+import { Form, H2, Label, P } from './components/Styles';
 
 // --------- enum ---------
 
@@ -10,8 +10,6 @@ const PRICES = {
   GOOGLE: 200
 }
 
-// -------------------------
-
 const getFinalPrice = (event, finalPrice, setFinalPrice) => {
   const servicePrice = Number(event.target.value);
 
@@ -20,7 +18,6 @@ const getFinalPrice = (event, finalPrice, setFinalPrice) => {
   } else {
     setFinalPrice(finalPrice - servicePrice)
   }
-
 }
 
 function App() {
@@ -61,7 +58,7 @@ function App() {
         </Label>
       </Form>
 
-      <p>Precio: {finalPrice}</p>
+      <P>Precio: {finalPrice}</P>
 
     </div>
   );
