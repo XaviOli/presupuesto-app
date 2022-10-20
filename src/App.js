@@ -7,22 +7,43 @@ const Form = styled.form`
   align-items: flex-start;
   width: fit-content;
   margin: auto;
-`
+`;
 
+const H2 = styled.h2`
+  font-size: 1rem;
+  font-weight: normal;
+  padding-bottom: 1rem;
+`;
+
+const Label = styled.label`
+  padding-bottom: 1rem;
+`
 
 function App() {
   return (
     <div className="App">
-      <h2>¿Qué quieres hacer?</h2>
+      <H2>¿Qué quieres hacer?</H2>
 
-      <form>
-        <label>
+      <Form>
+        <Label>
           <input 
             type='checkbox' 
             name='web' />
           {' '}Una página web(500€)
-        </label>
-      </form>
+        </Label>
+        <Label>
+          <input 
+            type='checkbox' 
+            name='web' />
+          {' '}Una consultoria SEO(300€)
+        </Label>
+        <Label>
+          <input 
+            type='checkbox' 
+            name='web' />
+          {' '}Una campaña de Google Ads(200€)
+        </Label>
+      </Form>
     </div>
   );
 }
