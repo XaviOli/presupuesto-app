@@ -10,5 +10,7 @@ Empezamos con tres chekboxes, mediante los cuales el usuario podrá decidir si d
 
 En función de las opciones que elija, se marcará un precio distinto:
 
+### `Ejercicio 2`
+
 
 
